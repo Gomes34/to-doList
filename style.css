@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    width: 50rem;
+    margin: auto;
+}
+
+hr {
+    margin: 5rem 0;
+}
+
+.adicionarItens{
+    margin-top: 50px;
+    height: 55px;
+}
+
+.adicionarItens input[type="text"]{
+    background: url(iconPesquisa.png) no-repeat left center;
+    background-size: 30px 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    padding: 35px;
+    caret-color: rgb(133, 192, 44);
+}
+
+.adicionarItens input[type="button"]{
+    background-color: rgb(133, 192, 44);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    float: right;
+}
+
+.listaItens{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0  20px #ccc;
+}
+
+.iconeCheck{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkCircle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.checkCircle:hover{
+    cursor: pointer;
+}
+
+.checkTrue{
+    background-color: rgb(133, 192, 44);
+}
+
+.checkTrue::before{
+    content: "\2714";
+}
+
+.checkTrueText{
+    background-color: rgb(133, 192, 44);   
+    color: white;
+}
+
+.botaoDeletar{
+    margin: 0 -1px;
+}
+
+.botaoDeletar input{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+}
